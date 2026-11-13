@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>O Segredo dos Brigadeiros Perfeitos</title>
+<meta name="description" content="Guia digital de confeitaria: aprende a fazer brigadeiros deliciosos e a transformá-los numa oportunidade de negócio.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Nunito+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--choc:#3E2218;--choc2:#5A3524;--beige:#E8D8C0;--cream:#FBF5EA;--gold:#C9A24B;--ink:#2a1710;--r:18px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font:17px/1.6 "Nunito Sans",system-ui,sans-serif;padding-bottom:env(safe-area-inset-bottom)}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;line-height:1.12;margin:0 0 .5em;color:var(--choc)}
+h1{font-size:clamp(1.8rem,7vw,3.2rem);font-weight:800}h2{font-size:clamp(1.5rem,5vw,2.3rem)}
+.wrap{max-width:720px;margin:0 auto;padding:28px 20px}
+.screen{display:none;min-height:100svh;animation:in .45s ease}.screen.on{display:block}
+@keyframes in{from{opacity:0;transform:translateX(24px)}to{opacity:1;transform:none}}
+.tag{display:inline-block;background:var(--choc);color:var(--beige);padding:6px 14px;border-radius:999px;font-size:.78rem;font-weight:800;letter-spacing:.06em}
+.btn{display:block;width:100%;border:0;cursor:pointer;background:linear-gradient(180deg,#d8b45c,var(--gold));color:var(--choc);font:800 1.05rem "Nunito Sans";padding:18px 22px;border-radius:999px;box-shadow:0 8px 20px rgba(62,34,24,.25);text-align:center;text-decoration:none;transition:transform .15s}
+.btn:active{transform:scale(.98)}.btn[disabled]{opacity:.45;cursor:not-allowed}
+.btn.ghost{background:none;box-shadow:none;border:2px solid var(--choc2);color:var(--choc);padding:12px;font-size:.95rem}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.hero{background:var(--choc);color:var(--cream);margin:-28px -20px 24px;padding:40px 20px 28px;border-radius:0 0 36px 36px}
+.hero h1{color:var(--cream)}.hero p{color:var(--beige)}
+.bb{display:flex;justify-content:center;gap:10px;margin:26px 0 8px;flex-wrap:wrap}
+.b{width:74px;height:74px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#7a4a33,#2a140c 70%);position:relative;box-shadow:0 8px 14px rgba(0,0,0,.4)}
+.b::after{content:"";position:absolute;inset:0;border-radius:50%;background:radial-gradient(circle,transparent 45%,rgba(255,255,255,.0) 46%),repeating-radial-gradient(circle at 50% 50%,rgba(232,216,192,.55) 0 2px,transparent 2px 7px);mask:radial-gradient(circle,transparent 20%,#000 21%);-webkit-mask:radial-gradient(circle,transparent 20%,#000 21%);opacity:.6;transform:scale(.97)}
+.b:nth-child(2){background:radial-gradient(circle at 35% 30%,#f2c4cf,#c76b86 70%)}.b:nth-child(3){background:radial-gradient(circle at 35% 30%,#f3dc9c,#b98a2c 70%)}
+.b:nth-child(4){background:radial-gradient(circle at 35% 30%,#fff,#d9c7a8 70%)}
+.b:nth-child(even){transform:translateY(12px)}
+input[type=text]{width:100%;font:inherit;padding:16px;border:2px solid var(--beige);border-radius:14px;background:#fff;margin:14px 0}
+.bar{height:8px;background:var(--beige);border-radius:9px;overflow:hidden;margin:6px 0 24px}.bar i{display:block;height:100%;width:0;background:var(--gold);transition:width .4s}
+.top{display:flex;align-items:center;gap:12px}.top button{background:none;border:0;font-size:1.4rem;cursor:pointer;color:var(--choc)}
+.opt{display:block;width:100%;text-align:left;font:inherit;background:#fff;border:2px solid var(--beige);border-radius:14px;padding:16px;margin:10px 0;cursor:pointer;transition:.15s}
+.opt.sel{border-color:var(--gold);background:#fff8e6;box-shadow:0 0 0 3px rgba(201,162,75,.25)}
+.step{display:flex;gap:12px;align-items:center;opacity:.25;transition:.5s;margin:14px 0;font-weight:600}.step.on{opacity:1}
+.step span{width:26px;height:26px;border-radius:50%;background:var(--beige);display:grid;place-items:center;font-size:.8rem}.step.on span{background:var(--gold)}
+.vid{width:100%;border-radius:var(--r);background:#000;box-shadow:0 10px 30px rgba(62,34,24,.3)}
+.v169{aspect-ratio:16/9}.v916{aspect-ratio:9/16;max-width:340px;display:block;margin:0 auto}
+.live{text-align:center;font-size:.92rem;color:var(--choc2);margin:12px 0}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:18px 0}.grid div{background:#fff;border:1px solid var(--beige);border-radius:14px;padding:14px;font-weight:600;font-size:.95rem}
+.cover{width:200px;aspect-ratio:3/4;margin:10px auto 22px;border-radius:6px 14px 14px 6px;background:linear-gradient(135deg,var(--choc2),var(--choc));border-left:10px solid #2a140c;box-shadow:12px 16px 30px rgba(62,34,24,.45);color:var(--cream);padding:20px 16px;text-align:center;display:flex;flex-direction:column;justify-content:center;gap:10px}
+.cover small{color:var(--gold);font-weight:800;letter-spacing:.1em;font-size:.65rem}.cover b{font:800 1.25rem/1.1 Fraunces,serif}.cover .b{width:46px;height:46px;margin:4px auto 0}
+.offer{background:#fff;border:2px solid var(--gold);border-radius:24px;padding:24px 20px;margin-top:10px}
+.old{text-decoration:line-through;color:#8a7466}.now{font:800 2.4rem Fraunces,serif;color:var(--choc)}
+ul.ck{list-style:none;padding:0}ul.ck li::before{content:"✓ ";color:var(--gold);font-weight:800}
+#toast{position:fixed;left:12px;bottom:calc(12px + env(safe-area-inset-bottom));background:#fff;border-left:5px solid var(--gold);border-radius:12px;padding:10px 14px;box-shadow:0 8px 24px rgba(0,0,0,.2);font-size:.85rem;max-width:240px;transform:translateX(-130%);transition:transform .4s;z-index:5;pointer-events:none}#toast.show{transform:none}
+footer{background:var(--choc);color:var(--beige);text-align:center;padding:28px 20px;font-size:.88rem}footer a{color:var(--gold);margin:0 8px;cursor:pointer;text-decoration:underline}
+dialog{max-width:520px;border:0;border-radius:18px;padding:24px;background:var(--cream)}dialog::backdrop{background:rgba(0,0,0,.5)}
+.adm{background:#fff3cd;border:1px solid #e0b500;border-radius:12px;padding:12px;font-size:.9rem;margin-top:12px}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<section class="screen on" id="s-hero"><div class="wrap">
+ <div class="hero"><span class="tag">GUIA DIGITAL DE CONFEITARIA</span>
+ <h1 style="margin-top:16px">Aprenda a fazer brigadeiros deliciosos e descubra como transformar essa habilidade numa oportunidade de negócio!</h1>
+ <p>Descubra receitas, técnicas e segredos para preparar brigadeiros irresistíveis, mesmo que esteja a começar do zero.</p>
+ <div class="bb" aria-hidden="true"><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i></div></div>
+ <button class="btn" data-go="name">COMEÇAR AGORA</button>
+</div></section>
+
+<section class="screen" id="s-name"><div class="wrap">
+ <div class="top"><button data-back aria-label="Voltar">←</button></div>
+ <h2 style="margin-top:40px">Antes de começarmos, como podemos chamar-te?</h2>
+ <input type="text" id="nome" placeholder="O teu primeiro nome" autocomplete="given-name" maxlength="30">
+ <button class="btn" id="nameBtn" disabled>CONTINUAR</button>
+</div></section>
+
+<section class="screen" id="s-quiz"><div class="wrap">
+ <div class="top"><button id="qBack" aria-label="Voltar">←</button><small id="qCount"></small></div>
+ <div class="bar"><i id="qBar"></i></div>
+ <h2 id="qTitle"></h2><div id="qOpts"></div>
+ <button class="btn" id="qNext" disabled style="margin-top:16px">CONTINUAR</button>
+</div></section>
+
+<section class="screen" id="s-an"><div class="wrap" style="padding-top:20vh">
+ <h2 id="anTitle"></h2>
+ <div class="step"><span>1</span>A analisar os teus objetivos.</div>
+ <div class="step"><span>2</span>A identificar o teu nível de experiência.</div>
+ <div class="step"><span>3</span>A preparar o teu caminho de aprendizagem.</div>
+</div></section>
+
+<section class="screen" id="s-res"><div class="wrap">
+ <div class="hero"><h1 id="resTitle"></h1><p id="resMsg"></p></div>
+ <button class="btn" data-go="vsl">DESCOBRIR O MÉTODO</button>
+</div></section>
+
+<main id="s-vsl" class="screen"><div class="wrap">
+ <h2>Assista ao vídeo e descubra o segredo dos brigadeiros perfeitos!</h2>
+ <video id="vsl" class="vid v169" controls playsinline preload="metadata" poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9'%3E%3Crect width='16' height='9' fill='%233E2218'/%3E%3Ccircle cx='8' cy='4.5' r='1.6' fill='%23C9A24B'/%3E%3C/svg%3E"></video>
+ <p class="live" id="live">Ainda ninguém está a assistir neste momento.</p>
+ <div id="vslErr" class="adm" hidden>Não foi possível carregar o vídeo. Verifica a ligação e tenta novamente.</div>
+
+ <h2 style="margin-top:40px">O Segredo dos Brigadeiros Perfeitos</h2>
+ <p>Um guia digital prático para aprender a preparar brigadeiros deliciosos, explorar novos sabores e descobrir como transformar a confeitaria numa oportunidade de negócio.</p>
+ <div class="grid"><div>🍫 Receitas tradicionais</div><div>✨ Brigadeiros gourmet</div><div>🍓 Brigadeiros recheados</div><div>👩‍🍳 Técnicas de preparação</div><div>🥄 Ponto e textura perfeitos</div><div>🎀 Decoração e apresentação</div><div>🧮 Cálculo de custos</div><div>🏷️ Definição de preços</div><div style="grid-column:1/-1">🛍️ Estratégias para começar a vender</div></div>
+
+ <section id="oferta" class="offer">
+  <div class="cover"><small>GUIA DIGITAL</small><b>O Segredo dos Brigadeiros Perfeitos</b><i class="b"></i></div>
+  <h3>O que recebes</h3>
+  <ul class="ck"><li>E-book completo com receitas e técnicas</li><li>Guia de custos e preços</li><li>Estratégias para começar a vender</li><li>Bónus: <span id="bonus">materiais extra incluídos</span></li></ul>
+  <p style="text-align:center;margin:18px 0 4px">De <span class="old" id="pOld"></span> por apenas</p>
+  <p class="now" style="text-align:center;margin:0 0 16px" id="pNow"></p>
+  <a class="btn" id="buy" href="#">QUERO O MEU E-BOOK</a>
+  <div class="adm" id="buyErr" hidden></div>
+ </section>
+
+ <h2 style="margin-top:40px">Aprenda a fazer o pagamento passo a passo</h2>
+ <p>Não sabes como concluir o pagamento? Assiste ao nosso vídeo explicativo e acompanha cada etapa para receberes o teu e-book.</p>
+ <video id="pay" class="vid v916" controls playsinline preload="metadata"></video>
+</div></main>
+
+<footer>© <span id="yr"></span> O Segredo dos Brigadeiros Perfeitos. Todos os direitos reservados.<br><br>
+<a data-dlg="d-priv">Política de Privacidade</a><a data-dlg="d-terms">Termos e Condições</a><a data-dlg="d-cont">Contacto</a></footer>
+
+<dialog id="d-priv"><h3>Política de Privacidade</h3><p>Guardamos apenas o teu primeiro nome e as respostas do quiz, no teu próprio dispositivo, para personalizar a experiência. O pagamento é processado pela plataforma externa, que trata os teus dados de pagamento. <em>(Substitui por o teu texto legal definitivo.)</em></p><button class="btn ghost" onclick="this.closest('dialog').close()">Fechar</button></dialog>
+<dialog id="d-terms"><h3>Termos e Condições</h3><p>Produto digital de acesso imediato após confirmação do pagamento. Os resultados dependem do esforço de cada pessoa; não garantimos rendimentos. <em>(Substitui por os teus termos definitivos.)</em></p><button class="btn ghost" onclick="this.closest('dialog').close()">Fechar</button></dialog>
+<dialog id="d-cont"><h3>Contacto</h3><p id="cEmail"></p><button class="btn ghost" onclick="this.closest('dialog').close()">Fechar</button></dialog>
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script src="config.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+<script>
+const C=window.CONFIG,$=s=>document.querySelector(s),S={name:"",ans:[]};
+const Q=[
+["Qual é o teu principal objetivo?",["Aprender a fazer brigadeiros em casa.","Começar um pequeno negócio.","Ganhar dinheiro extra.","Aperfeiçoar as minhas receitas."]],
+["Já sabes preparar brigadeiros?",["Nunca fiz.","Sei fazer os tradicionais.","Já faço brigadeiros gourmet.","Quero aperfeiçoar as minhas técnicas."]],
+["Que tipo de brigadeiros gostarias de aprender?",["Tradicionais.","Gourmet.","Recheados e especiais.","Todos os anteriores."]],
+["Quanto tempo tens disponível para aprender?",["30 minutos por dia.","1 hora por dia.","Apenas aos fins de semana."]],
+["Qual é a tua maior dificuldade?",["Conseguir a textura perfeita.","Fazer brigadeiros bonitos.","Conhecer os custos e definir preços.","Conseguir clientes e vender."]],
+["Quando gostarias de começar?",["Hoje.","Nos próximos dias.","Ainda estou a pesquisar."]]];
+let qi=0,hist=["hero"];
+function show(id,push=true){document.querySelectorAll(".screen").forEach(e=>e.classList.remove("on"));
+ const el=$("#s-"+id);el.classList.add("on");scrollTo(0,0);if(push)hist.push(id)}
+function back(){hist.pop();show(hist[hist.length-1],false)}
+document.addEventListener("click",e=>{
+ const g=e.target.closest("[data-go]");if(g)show(g.dataset.go);
+ if(e.target.closest("[data-back]"))back();
+ const d=e.target.closest("[data-dlg]");if(d)document.getElementById(d.dataset.dlg).showModal()});
+$("#nome").oninput=e=>$("#nameBtn").disabled=e.target.value.trim().length<2;
+$("#nameBtn").onclick=()=>{S.name=$("#nome").value.trim().split(/\s+/)[0];qi=0;renderQ();show("quiz")};
+function renderQ(){const[q,o]=Q[qi];$("#qCount").textContent=`${qi+1} de ${Q.length}`;$("#qBar").style.width=(qi/Q.length*100)+"%";
+ $("#qTitle").textContent=q;const box=$("#qOpts");box.innerHTML="";const nx=$("#qNext");nx.disabled=S.ans[qi]==null;
+ nx.textContent=qi==Q.length-1?"VER RESULTADO":"CONTINUAR";
+ o.forEach((t,i)=>{const b=document.createElement("button");b.className="opt"+(S.ans[qi]===i?" sel":"");b.textContent=t;
+  b.onclick=()=>{S.ans[qi]=i;box.querySelectorAll(".opt").forEach(x=>x.classList.remove("sel"));b.classList.add("sel");nx.disabled=false};box.append(b)});
+ box.style.animation="none";box.offsetHeight;box.style.animation="in .4s"}
+$("#qNext").onclick=()=>{if(qi<Q.length-1){qi++;renderQ()}else analyse()};
+$("#qBack").onclick=()=>{if(qi>0){qi--;renderQ()}else back()};
+function analyse(){$("#qBar").style.width="100%";$("#anTitle").textContent=`${S.name}, estamos a analisar as tuas respostas e a preparar uma recomendação para ti...`;
+ show("an");const st=[...document.querySelectorAll(".step")];st.forEach(s=>s.classList.remove("on"));
+ st.forEach((s,i)=>setTimeout(()=>s.classList.add("on"),700*(i+1)));
+ setTimeout(result,3200)}
+function result(){const[g,l,t,,d]=S.ans;
+ const goal=["aprender a preparar brigadeiros em casa","dar os primeiros passos num pequeno negócio","gerar um rendimento extra","aperfeiçoar as tuas receitas"][g];
+ const lvl=["começar do zero, com um passo a passo claro","construir sobre o que já sabes dos tradicionais","levar os teus gourmet ao nível seguinte","afinar as tuas técnicas"][l];
+ const diff=["acertar o ponto e a textura","dar uma apresentação mais bonita aos brigadeiros","calcular custos e definir preços","encontrar clientes e vender"][d];
+ $("#resTitle").textContent=`${S.name}, encontrámos um caminho para começares!`;
+ $("#resMsg").textContent=`Disseste que queres ${goal}. Pelo teu perfil, o melhor ponto de partida é ${lvl}, com foco em ${diff}. Aprender a preparar brigadeiros com a textura, o sabor e a apresentação certos pode ser um excelente primeiro passo.`;
+ try{localStorage.setItem("quiz",JSON.stringify(S))}catch(e){}show("res")}
+
+// Vídeos
+const vsl=$("#vsl"),pay=$("#pay");
+vsl.src=C.VSL_VIDEO_URL;pay.src=C.PAYMENT_TUTORIAL_URL;
+vsl.onerror=()=>$("#vslErr").hidden=false;
+// Compra
+$("#pOld").textContent=C.PRICE_OLD;$("#pNow").textContent=C.PRICE_NOW;$("#yr").textContent=new Date().getFullYear();
+$("#cEmail").textContent="Escreve-nos para "+C.CONTACT_EMAIL;
+const buy=$("#buy");
+if(/^https:\/\/.+/.test(C.CHECKOUT_URL||"")){buy.href=C.CHECKOUT_URL;buy.target="_blank";buy.rel="noopener"}
+else{buy.onclick=e=>{e.preventDefault();const b=$("#buyErr");b.hidden=false;b.textContent="Admin: CHECKOUT_URL não está configurado em config.js."}}
+// Presença em tempo real
+let sb=null,ch=null,tracking=false;
+const key=crypto.randomUUID?crypto.randomUUID():String(Math.random());
+if(C.SUPABASE_URL&&C.SUPABASE_ANON_KEY&&window.supabase){
+ sb=supabase.createClient(C.SUPABASE_URL,C.SUPABASE_ANON_KEY);
+ ch=sb.channel("vsl-viewers",{config:{presence:{key}}});
+ ch.on("presence",{event:"sync"},()=>{const n=Object.keys(ch.presenceState()).length;
+  $("#live").textContent=n>0?`👁️ ${n} ${n==1?"pessoa está":"pessoas estão"} a assistir a este vídeo neste momento.`:"Ainda ninguém está a assistir neste momento."});
+ ch.on("broadcast",{event:"purchase"},({payload})=>payload&&payload.name&&notify(payload.name)).subscribe();
+ const on=async()=>{if(!tracking){tracking=true;await ch.track({t:Date.now()})}},off=async()=>{if(tracking){tracking=false;await ch.untrack()}};
+ vsl.addEventListener("play",on);["pause","ended"].forEach(ev=>vsl.addEventListener(ev,off));addEventListener("pagehide",off);
+}else $("#live").textContent="Contador indisponível (Supabase por configurar).";
+// Notificações
+const toast=$("#toast");let tq=null;
+function notify(name){toast.innerHTML=`<b>Compra confirmada!</b><br>${name.replace(/[<>&]/g,"")} adquiriu o e-book.`;toast.classList.add("show");setTimeout(()=>toast.classList.remove("show"),3000)}
+if(C.DEMO_NOTIFICATIONS_ENABLED){
+ const N=["Ana Paula","Maria Fernandes","Joana Miguel","Carla Domingos","Sandra Manuel","Beatriz António","Isabel Francisco","Patrícia José","Marta Joaquim","Daniela Pedro","Edna Mateus","Sónia Alberto","Rosa Clemente","Teresa Afonso","Juliana Sebastião","Cláudia André","Luísa Bernardo","Cátia Simão","Filomena Paulo","Andreia dos Santos"];
+ let last=-1;setInterval(()=>{let i;do{i=Math.floor(Math.random()*N.length)}while(i===last);last=i;notify(N[i])},7000)}
+</script>
+</body></html>
